@@ -50,3 +50,6 @@ Inside the nested for loop is this line of code, which takes an element from arr
 ```
 
 Lasltly for problem 1, it asks us to save the normalized array into X_normalized.npy which the .save() function does for the program
+
+Problem 2
+  This problem tasks us to create a 10x10 array with the squared values of 1 to 100, then find all of the values that are divisible by 3 and store it in an array
