@@ -1,8 +1,8 @@
 Problem 1 :
 The first problem tasks us to create a random array 5 by array and normalize it.
-  formula:(X-𝑥̅)/𝜎
-  there: X is the element of the array
-         𝑥̅ is the mean of the array
+  Formula:(X-𝑥̅)/𝜎
+  where: X is the element of the array,
+         𝑥̅ is the mean of the array,
          𝜎 is the standard deviation
 
 I use the numerical python library to solve this problem which lets us create and manipulate different arrays
