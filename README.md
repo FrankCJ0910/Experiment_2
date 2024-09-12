@@ -1,4 +1,4 @@
-Problem 1
+Problem 1 :
 The first problem tasks us to create a random array 5 by array and normalize it.
   formula:(X-𝑥̅)/𝜎
   where: X is the element of the array
