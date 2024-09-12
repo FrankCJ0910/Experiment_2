@@ -1,7 +1,7 @@
 Problem 1 :
-/tThe first problem tasks us to create a random array 5 by array and normalize it.
-  /tformula:(X-𝑥̅)/𝜎
-  w/there: X is the element of the array
+The first problem tasks us to create a random array 5 by array and normalize it.
+  formula:(X-𝑥̅)/𝜎
+  there: X is the element of the array
          𝑥̅ is the mean of the array
          𝜎 is the standard deviation
 
