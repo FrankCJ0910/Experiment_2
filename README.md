@@ -42,7 +42,7 @@ The program then saves the normalized value into a file named 'X_normalized.npy'
   np.save('X_normalized.npy',norm)
 ```
 
-Problem 2
+Problem 2 :
   This problem tasks us to create a 10x10 array with the squared values of 1 to 100, then find all of the values that are divisible by 3 and store it in an array
 
 First created an empty array to store values
