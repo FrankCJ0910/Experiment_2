@@ -44,3 +44,35 @@ The program then saves the normalized value into a file named 'X_normalized.npy'
 
 Problem 2
   This problem tasks us to create a 10x10 array with the squared values of 1 to 100, then find all of the values that are divisible by 3 and store it in an array
+
+First created an empty array to store values
+
+``` python
+  A = np.zeros([10,10])
+```
+
+A nested loop is used to populate the array with squared values of the first 100 integers
+
+``` python
+  #Starting value of array
+  n = 1
+  #Nested loop for each element of A
+  for i in range(10):
+      for j in range(10):
+          #Store the value of n squared
+          A[i,j] = n**2
+          #increment value of n by 1
+          n += 1
+```
+
+The array is then spliced to get the values of A that are divisible by 3 and stored in B
+
+``` python
+  B = A[A%3==0]
+```
+
+B is then saved into a file named 'div_by_3.npy'
+
+``` python
+  np.save('div_by_3.npy',B)
+```
