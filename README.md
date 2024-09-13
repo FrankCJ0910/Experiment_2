@@ -5,51 +5,42 @@ The first problem tasks us to create a random array 5 by array and normalize it.
          𝑥̅ is the mean of the array,
          𝜎 is the standard deviation
 
-I use the numerical python library to solve this problem which lets us create and manipulate different arrays
+I use the numerical python library to solve the following problems which lets us create and manipulate different arrays
+Using this line, I import the libary as np to be used in the code
 
 ``` python
   import numpy as np
 ```
 
-Using this line, I immport the libary as np to be used in the code
+To solve problem 1, the program first creates two 5x5 arrays, one with random values and another that is empty
 
 ``` python
   X = np.random.random((5,5))
+  norm = np.zeros([5,5])
 ```
 
-To create the 5x5 array, I use the np.random.random() function and store it into X
+The program then gets the mean and standard deviation of array X
 
 ``` python
   m = X.mean()
   std = X.std()
 ```
 
-I used .mean() and .std() functions to get the mean and standard deviation of the entire array and store it into m for mean and std for standard deviation
+The program then uses a nested for loop to normalize array X
 
 ``` python
-  norm = np.zeros([5,5])
-```
-
-I create an empty 5x5 array using np.zeros() for storage of the normalized X values
-
-``` python
+  #Nested loop for every row and column of X
   for i in range(5):
-    for j in range(5):
+      for j in range(5):
+          #Perform normalization on each element
+          norm[i,j] = (X[i,j] - m)/std
 ```
 
-To go through every element of the array X, I use a nested for loop with values of range(5) since this function gives the value of 0-4 which lets the program check every element of X
-
-``` python
-      norm[i,j] = (X[i,j] - m)/std
-```
-
-Inside the nested for loop is this line of code, which takes an element from array X with the index value of i and j, then subtracts it with the mean and divides it with the std and lastly stores it into norm
+The program then saves the normalized value into a file named 'X_normalized.npy'
 
 ``` python
   np.save('X_normalized.npy',norm)
 ```
-
-Lasltly for problem 1, it asks us to save the normalized array into X_normalized.npy which the .save() function does for the program
 
 Problem 2
   This problem tasks us to create a 10x10 array with the squared values of 1 to 100, then find all of the values that are divisible by 3 and store it in an array
